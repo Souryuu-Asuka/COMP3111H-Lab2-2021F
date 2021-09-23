@@ -4,12 +4,11 @@
 package Lab2;
 
 import COMP3111.Lab2.ex1.Book;
-import COMP3111.Lab2.ex1.Computer;
-import COMP3111.Lab2.ex1.MobileComputer;
+import COMP3111.Lab2.ex2.*;
 
 public class Library {
     public static void main(String[] args) {
-        final String array[] = {"Basic Java", "Advanced Java", "Guru Java"};
+        final String[] array = {"Basic Java", "Advanced Java", "Guru Java"};
         Book b = new Book(array);
 
         int k = 2;
@@ -23,6 +22,12 @@ public class Library {
         for (int i = 0; i< 10; i++)
             a.work();
 
+        Charger c = new Charger();
+        Phone p = new Phone();
+        MobileComputer m = new MobileComputer();
+
+        c.charge(p);
+        c.charge(m);
     }
 
 

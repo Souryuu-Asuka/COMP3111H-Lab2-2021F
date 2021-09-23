@@ -1,4 +1,4 @@
-package COMP3111.Lab2.ex1;
+package COMP3111.Lab2.ex2;
 
 public class Computer {
     protected String secret;
