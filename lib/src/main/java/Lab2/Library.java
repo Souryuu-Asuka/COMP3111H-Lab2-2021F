@@ -4,6 +4,8 @@
 package Lab2;
 
 import COMP3111.Lab2.ex1.Book;
+import COMP3111.Lab2.ex1.Computer;
+import COMP3111.Lab2.ex1.MobileComputer;
 
 public class Library {
     public static void main(String[] args) {
@@ -16,6 +18,10 @@ public class Library {
 
         System.out.println("There are " + anotherArray.length + " chapters");
         System.out.println(java.util.Arrays.toString(anotherArray));
+
+        Computer a = new MobileComputer();
+        for (int i = 0; i< 10; i++)
+            a.work();
 
     }
 
